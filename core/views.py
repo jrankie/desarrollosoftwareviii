@@ -21,8 +21,9 @@ def acerca(request):
     )
 
 
+
 def estudiantes(request):
     return HttpResponse(
         "<h1>Estudiantes</h1>"
-        "<p>Lista de estudiantes del grupo 2GS131.</p>"
+
     )
