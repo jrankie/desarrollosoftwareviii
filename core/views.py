@@ -17,3 +17,20 @@ def acerca(request):
         "<p>Proyecto desarrollado para Desarrollo de Software VIII.</p>"
         "<p>Grupo: 2GS131</p>"
     )
+
+def contacto(request):
+    return HttpResponse(
+        "<h1>Contacto</h1>"
+        "<p>Proyecto desarrollado para Desarrollo de Software VIII.</p>"
+    )
+
+
+def estudiantes(request):
+    return HttpResponse(
+        "<h1>Estudiantes</h1>"
+    )
+
+def profesores(request):
+    return HttpResponse(
+        "<h1>Profesores</h1>"
+    )
