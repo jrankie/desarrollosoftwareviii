@@ -32,5 +32,5 @@ def estudiantes(request):
 
 def profesores(request):
     return HttpResponse(
-        "<h1>Profesores</h1>"
+        "<h1>Profesore</h1>"
     )
