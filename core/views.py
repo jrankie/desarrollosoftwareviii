@@ -1,15 +1,17 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 
 # Create your views here.
-from django.http import HttpResponse
-
 
 def inicio(request):
     return HttpResponse(
         "<h1>Desarrollo de Software VIII</h1>"
         "<p>Mi primer proyecto Django está funcionando correctamente.</p>"
+        "<a href='/estudiantes/'>Estudiantes</a><br>"
+        "<a href='/acerca/'>Acerca del proyecto</a>"
     )
+
 
 def acerca(request):
     return HttpResponse(
@@ -18,19 +20,10 @@ def acerca(request):
         "<p>Grupo: 2GS131</p>"
     )
 
-def contacto(request):
-    return HttpResponse(
-        "<h1>Contacto</h1>"
-        "<p>Proyecto desarrollado para Desarrollo de Software VIII.</p>"
-    )
 
 
 def estudiantes(request):
     return HttpResponse(
         "<h1>Estudiantes</h1>"
-    )
 
-def profesores(request):
-    return HttpResponse(
-        "<h1>Profesore</h1>"
     )
